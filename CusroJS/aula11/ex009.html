@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é estrangeiro?</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Em qual país você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="nacionalidade"></div>
+    
+    <script>
+            var pais = document.querySelector('input#pais')
+            var nacionalidade = document.querySelector('div#nacionalidade')
+
+        function calcular() {
+            if (pais.value == 'Brasil') {
+                nacionalidade.innerHTML += '<p>Você é brasileiro! :)</p>'
+            } else {
+                nacionalidade.innerHTML += '<p>Você é estrangeiro :(</p>' 
+            }
+        }
+    </script>
+</body>
+</html>

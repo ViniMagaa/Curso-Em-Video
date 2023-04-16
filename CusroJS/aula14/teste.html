@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+</head>
+<body class="body">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .body {
+            background-color: rgb(46, 46, 46);
+        }
+
+        .titulo {
+            color: white;
+            font-size: 500%;
+            text-align: center;
+        }
+
+        .paragrafo1 {
+            color: lightskyblue;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        .numero {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            background-color: black;
+            width: 80px;
+            border-radius: 10px;
+            border-width: 0ch;
+        }
+
+        .botao {
+            color: black;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 1px;
+            border-width: 0ch;
+        }
+
+        #regresso {
+            color: white;
+            font-size: 30px;
+        }
+        
+        #fim {
+            color: white;
+            font-size: 30px;
+        }
+
+        #alert {
+            color: lightskyblue;
+            font-size: 30px;
+        }
+
+
+    </style>
+
+    <h1 class="titulo">De X a Zero!</h1>
+    <p class="paragrafo1">Digite o Número que chegará até zero: <input type="number" class="numero"></p>
+    <input type="button" value="Iniciar Contagem" class="botao" onclick=iniciar()>
+    <p><div id="regresso"></div></p>
+    <p><div id="fim"></div>
+        <div id="alert"></div>
+
+    <script>
+        function iniciar() {
+            var numero = document.querySelector('.numero')
+            var regresso = document.querySelector('#regresso')
+            var fim = document.querySelector('#fim')
+            var alert = document.querySelector('#alert')
+            num = Number(numero.value)
+            while (num > 0) {
+                regresso.innerHTML += `<p>${num}`
+                num--
+            }
+            fim.innerHTML += '<b>FIM!'
+            alert.innerHTML += '<p>Favor reinicie a página!'
+        }
+
+
+
+    </script>
+</body>
+</html>

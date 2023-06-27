@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -31,7 +32,21 @@
             color: white;
         }
 
-        .num {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(10, 10, 93);
+        }
+        
+        tbody > tr:nth-child(odd) { /* 2n - 1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
             text-align: right;
         }
     </style>
@@ -166,5 +181,15 @@
             </tr>
         </tbody>
     </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nam porro dicta tempore eum atque recusandae praesentium molestiae similique libero rem, id odio voluptatum accusamus hic saepe ea placeat fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum voluptatum iure cupiditate exercitationem iusto accusamus maxime qui doloremque dolores quisquam eaque aperiam, recusandae aspernatur tempore minus aliquam eius omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptate! Totam facere dolorum tempore, inventore placeat voluptate maxime veritatis nihil labore nulla eius, ipsum sapiente molestiae itaque, vero cupiditate voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae maxime consequatur veniam iste placeat eum, obcaecati veritatis facere illum numquam itaque labore temporibus in similique sed velit beatae totam.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nam porro dicta tempore eum atque recusandae praesentium molestiae similique libero rem, id odio voluptatum accusamus hic saepe ea placeat fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum voluptatum iure cupiditate exercitationem iusto accusamus maxime qui doloremque dolores quisquam eaque aperiam, recusandae aspernatur tempore minus aliquam eius omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptate! Totam facere dolorum tempore, inventore placeat voluptate maxime veritatis nihil labore nulla eius, ipsum sapiente molestiae itaque, vero cupiditate voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae maxime consequatur veniam iste placeat eum, obcaecati veritatis facere illum numquam itaque labore temporibus in similique sed velit beatae totam.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nam porro dicta tempore eum atque recusandae praesentium molestiae similique libero rem, id odio voluptatum accusamus hic saepe ea placeat fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum voluptatum iure cupiditate exercitationem iusto accusamus maxime qui doloremque dolores quisquam eaque aperiam, recusandae aspernatur tempore minus aliquam eius omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptate! Totam facere dolorum tempore, inventore placeat voluptate maxime veritatis nihil labore nulla eius, ipsum sapiente molestiae itaque, vero cupiditate voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae maxime consequatur veniam iste placeat eum, obcaecati veritatis facere illum numquam itaque labore temporibus in similique sed velit beatae totam.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nam porro dicta tempore eum atque recusandae praesentium molestiae similique libero rem, id odio voluptatum accusamus hic saepe ea placeat fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum voluptatum iure cupiditate exercitationem iusto accusamus maxime qui doloremque dolores quisquam eaque aperiam, recusandae aspernatur tempore minus aliquam eius omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptate! Totam facere dolorum tempore, inventore placeat voluptate maxime veritatis nihil labore nulla eius, ipsum sapiente molestiae itaque, vero cupiditate voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae maxime consequatur veniam iste placeat eum, obcaecati veritatis facere illum numquam itaque labore temporibus in similique sed velit beatae totam.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nam porro dicta tempore eum atque recusandae praesentium molestiae similique libero rem, id odio voluptatum accusamus hic saepe ea placeat fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum voluptatum iure cupiditate exercitationem iusto accusamus maxime qui doloremque dolores quisquam eaque aperiam, recusandae aspernatur tempore minus aliquam eius omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptate! Totam facere dolorum tempore, inventore placeat voluptate maxime veritatis nihil labore nulla eius, ipsum sapiente molestiae itaque, vero cupiditate voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae maxime consequatur veniam iste placeat eum, obcaecati veritatis facere illum numquam itaque labore temporibus in similique sed velit beatae totam.</p>
 </body>
 </html>

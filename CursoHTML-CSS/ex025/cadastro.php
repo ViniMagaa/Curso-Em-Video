@@ -1,5 +1,5 @@
 Os dados foram enviados!
-Aprenda PHP para saber o quê fazer com eles5
+Aprenda PHP para saber o quê fazer com eles
 
 
 

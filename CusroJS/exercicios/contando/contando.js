@@ -12,7 +12,7 @@ function contar() {
         alert("O início deve ser menor que o fim!")
     } else {
         for (var i = inicio; i <= fim; i += passo) {
-            text.innerHTML += i + "... " 
+            text.innerHTML += i + " 👉 " 
         }
     }
 }

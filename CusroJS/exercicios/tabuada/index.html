@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>titulo</title>
-    <link rel="stylesheet" href="modeloStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div id="msg">
-            mensagem
+            <p>
+                Digite um número:  <input type="number" name="num" id="inum" >
+            </p>
+            <p>
+                <input type="submit" value="Mostrar Tabuada" onclick="tabuada()">
+            </p>
         </div>
-        <div>
-            
+        <div id="res">
+            <p>
+                Digite o número para descobrir sua tabuada!
+            </p>
         </div>
     </section>
     <footer>

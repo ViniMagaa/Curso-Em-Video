@@ -6,6 +6,51 @@
     --cor-azul-3: #048BB8;
     --cor-azul-4: #05B2EA;
     --cor-azul-5: #4CC6EE;
-    --neu-outside: ;
-    --neu-inside: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background-color: var(--cor-azul-3);
+    position: relative;
+}
+
+main {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: var(--cor-azul-4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.21);
+    display: inline-block;
+}
+
+div#imagem {
+    height: 300px;
+    background-image: url(../imagens/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#formulario {
+    padding: 20px;
+}
+
+div#formulario p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+div#formulario input {
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
 }

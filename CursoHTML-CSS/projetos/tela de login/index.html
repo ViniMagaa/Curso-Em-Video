@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="imagens/pattern.jpg" alt="Imagem">
+                
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Repudiandae est voluptatibus facilis modi aspernatur, maiores error harum fugiat corporis praesentium, ipsa quos cum nam, alias vero eligendi eos natus inventore.</p>
+
+                <form action="login.php" method="post">
+                    <p>
+                        <label for="inome">
+                            Nome: <input type="text" name="nome" id="inome">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="isenha">
+                            Senha: <input type="password" name="senha" id="isenha">
+                        </label>
+                    </p>
+                </form>
             </div>
         </section>
     </main>

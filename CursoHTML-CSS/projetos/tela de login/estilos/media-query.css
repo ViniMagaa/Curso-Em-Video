@@ -8,9 +8,49 @@
     --cor-azul-5: #4CC6EE;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
-    main {
-        width: 800px;
+    body {
+        background-image: linear-gradient(to top, var(--cor-azul-1), var(--cor-azul-4));
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    div#imagem {
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    div#formulario {
+        width: 60%;
+        height: 100%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, var(--cor-azul-1), var(--cor-azul-4));
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    div#imagem {
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+
+    div#formulario {
+        width: 50%;
+        height: 100%;
+        float: left;
+        font-size: 1.3em;
     }
 }

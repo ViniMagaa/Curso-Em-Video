@@ -17,10 +17,10 @@
             var nacionalidade = document.querySelector('div#nacionalidade')
 
         function calcular() {
-            if (pais.value == 'Brasil') {
-                nacionalidade.innerHTML += '<p>Você é brasileiro! :)</p>'
+            if (pais.value == 'Brasil' || pais.value == 'brasil') {
+                nacionalidade.innerHTML += '<p>Você é brasileiro! 😊</p>'
             } else {
-                nacionalidade.innerHTML += '<p>Você é estrangeiro :(</p>' 
+                nacionalidade.innerHTML += '<p>Você é estrangeiro 😢</p>' 
             }
         }
     </script>

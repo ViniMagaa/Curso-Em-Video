@@ -8,12 +8,16 @@ function verificar() {
     } else {
         var genero = document.getElementsByName('radgen')
         var idade = ano - Number(fano.value)
-        var gen = ''
+        var gen = genero[0].checked ? gen = 'Homem' : gen = 'Mulher'
+        /*
+        
         if (genero[0].checked) {
             gen = 'Homem'
         } else {
             gen = 'Mulher'
         }
+
+        */
         res.innerHTML = `Detectamos um(a) ${gen} com ${idade} anos!`
     }
 }

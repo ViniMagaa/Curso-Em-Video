@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         div#area {
             font: normal 30pt Arial;
             background: rgb(75, 179, 75);
@@ -14,6 +21,8 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            border-radius: 50%;
+            transition: all 5ms linear;
         }
     </style>
 </head>
@@ -24,16 +33,18 @@
     
     <script>
         var a = window.document.getElementById('area')
+        a.style.cursor = 'pointer'
         a.addEventListener('click' , clicar)
         a.addEventListener('mouseenter' , entrar)
         a.addEventListener('mouseout' , sair)
 
         function clicar() {
             a.innerText = 'Clicou!'
-            a.style.background = 'rgb(255, 0, 50)'
+            a.style.background = 'rgb(255, 10, 30)'
         }
         function entrar() {
             a.innerText = 'Entrou'
+            a.style.background = 'rgb(10, 100, 10)'
         }
         function sair() {
             a.innerText = 'Saiu'
